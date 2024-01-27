@@ -1,0 +1,57 @@
+<html>
+  <head>
+      <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Css Animation</title>
+	 <style>
+	    h1:hover{
+		   color:white;
+		   background-color:#669bbc;
+		   letter-spacing:5px;
+		   font-size:40px;
+		}
+	    #loader{
+		  width:200px;
+		  height:200px;
+		  border:7px solid #61E786; 
+          border-radius:12px;		  
+          margin-top:150px; 		  
+		}
+		#round{
+		  width:80px;
+		  height:80px;
+		  border-radius:50%;
+		  border:5px solid #F6E8EA;
+		  Border-top:5px solid black;
+		  Border-bottom:5px solid #ff9770;
+		  Border-left:5px solid skyblue;
+		  Border-right:5px solid #ef233c;
+		  margin-top:45px;
+		  background-color:;
+		  animation:spinAnimate 0.3s ease 0s infinite normal;
+		}
+		@keyframes spinAnimate{
+		  from{
+		     transform:rotate(0deg);
+		  }
+		  to{
+		     transform:rotate(360deg);
+		  }
+		}
+		#mar{
+		    font-size:25px;
+			color:white;
+			background-color:#ffb703;
+		}
+	 </style>
+  </head>
+  <body>
+     <center>
+       <h1>Css Animation</h1>
+	     <div id="loader">
+		 <marquee id="mar" behavior="alternate">Arnab</marquee>
+		 <div id="round"></div>
+		 </div>
+	 </center>
+  </body>
+</html>
